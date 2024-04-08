@@ -18,3 +18,8 @@ spec:
         name: guestbook-ui
         ports:
         - containerPort: 80
+        env:
+            - name: GUESTBOOK_DB_HOST
+              value: mysql
+            - name: GUESTBOOK_DB_PASSWORD
+              value: password
